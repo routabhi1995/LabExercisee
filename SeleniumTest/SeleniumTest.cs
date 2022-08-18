@@ -51,9 +51,9 @@ namespace LabExercise
             Message.SendKeys(op4);
             Thread.Sleep(2000);
 
-           
-
-
+            IWebElement Close = driver.FindElement(By.XPath("//button[text()='Send message']//preceding-sibling::button[text()='Close']"));
+            Close.Click();
+            Thread.Sleep(3000);
             driver.Quit();
 
 
